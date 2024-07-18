@@ -11,7 +11,7 @@ const connection = () => {
         mongoose.connect(DB_URI);
         console.log("Database connected successfully");
 
-    } catch(error) {
+    } catch(error:any) {
         console.log('error while connecting to the database', error.message);
     }
 }
